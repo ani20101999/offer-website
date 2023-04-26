@@ -10,7 +10,7 @@ const app = express();
 mongoose.connect("mongodb://localhost:27017/user").then(() =>{
     console.log("Connected to db")
 }).catch(()=>{
-    console.log("failed to connected to db")
+    console.log("failed to connect to db")
 })
 app.use(bodyparse.json());
 app.listen(SERVER_PORT, ()=>{

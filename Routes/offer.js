@@ -57,7 +57,8 @@ router.post("/list", async(req, res)=>{
     }).catch(()=>{
         res.status(500).send("Internal Server Error")
     })
-});
+})
+})
 
 router.post("/create", async(req, res)=>{
    //find user by token 
